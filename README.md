@@ -5,7 +5,7 @@ This Arduino library is a native Apple HomeKit accessory implementation for the 
 
 This library is the ESP32 version of [Arduino-HomeKit-ESP8266](https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266), and **will no longer be maintained**, since Espressif has published the official HomeKit library for ESP32, available on Espressif's GitHub repository [esp-apple-homekit-adk](https://github.com/espressif/esp-apple-homekit-adk).
 
-#### Notes
+## Notes
 
 * This is a "only-can-work" version for ESP32, remains something to be optimized.
 
@@ -15,7 +15,7 @@ This library is the ESP32 version of [Arduino-HomeKit-ESP8266](https://github.co
 
 * The HomeKit storage on ESP32 is based on `nvs`.
 
-#### Performance WITH Hardware Acceleration on ESP32
+## Performance WITH Hardware Acceleration on ESP32
 
 * Preinit: ~0.53s
 * Pair Setup Step 1/3: ~0s (The heavy crypto computation is done in Preinit)
@@ -24,7 +24,7 @@ This library is the ESP32 version of [Arduino-HomeKit-ESP8266](https://github.co
 * Pair Verify Step 1/2: ~0.05s
 * Pair Verify Step 2/2: ~0.02s
 
-#### Performance WITHOUT Hardware Acceleration on ESP32
+## Performance WITHOUT Hardware Acceleration on ESP32
 
 * Preinit: ~2.2s
 * Pair Setup Step 1/3: ~0s (The heavy crypto computation is done in Preinit)
@@ -33,9 +33,15 @@ This library is the ESP32 version of [Arduino-HomeKit-ESP8266](https://github.co
 * Pair Verify Step 1/2: ~0.06s
 * Pair Verify Step 2/2: ~0.03s
 
-#### Setup code of the example sketch
+## Setup code of the example sketch
 
 ``111-11-111``
+
+## Manual Installation 
+
+Refer to the official guide: [Manual installation](https://www.arduino.cc/en/guide/libraries#toc5)
+Note: this library will not publish the release version for Arduino IDE. 
+
 
 #### Manual Installation for Windows
 
@@ -46,4 +52,4 @@ This library is the ESP32 version of [Arduino-HomeKit-ESP8266](https://github.co
 1. Restart your Arduino IDE.
 1. Check out the examples.
 
-Note: this library will not publish the release version for Arduino IDE. 
+
