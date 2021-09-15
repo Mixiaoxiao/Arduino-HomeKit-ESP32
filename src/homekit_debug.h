@@ -37,8 +37,8 @@ static uint32_t start_time = 0;
 
 #define INFO(message, ...) HOMEKIT_PRINTF(">>> [" MILLIS_FMT "] HomeKit: " message "\n", millis(), ##__VA_ARGS__)
 #define ERROR(message, ...) HOMEKIT_PRINTF("!!! [" MILLIS_FMT "] HomeKit: " message "\n", millis(), ##__VA_ARGS__)
-#define INFO_HEAP() INFO("Free heap: %u", system_get_free_heap_size());
-#define DEBUG_HEAP() DEBUG("Free heap: %u", system_get_free_heap_size());
+#define INFO_HEAP() INFO("Free heap: %u", esp_get_free_heap_size());
+#define DEBUG_HEAP() DEBUG("Free heap: %u", esp_get_free_heap_size());
 static unsigned long start_time = 0;
 #define DEBUG_TIME_BEGIN()  start_time=millis();
 #define DEBUG_TIME_END(func_name)  HOMEKIT_PRINTF("### [" MILLIS_FMT "] %s took "  MILLIS_FMT "ms\n", millis(), func_name, (millis() - start_time));

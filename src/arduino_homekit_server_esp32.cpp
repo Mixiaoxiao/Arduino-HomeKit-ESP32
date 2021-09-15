@@ -3436,7 +3436,7 @@ void homekit_server_init(homekit_server_config_t *config) {
 	if (!server->paired) {
 		if (!arduino_homekit_preinit(server)) {
 			ERROR("Error in arduino_homekit_preinit, please check and retry");
-			system_restart();
+			esp_restart();
 			return;
 		}
 	}
